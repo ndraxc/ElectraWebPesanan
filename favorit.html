@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> project kp </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js" defer></script>
+
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Electra</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Electra</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">HALAMAN</a></li>
+          <li>
+            <a href="#">KATEGORI</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="sensormodul.html">SENSOR/MODUL</a></li>
+              <li><a href="cctv.html">CCTV</a></li>
+              <li><a href="aksesories.html">AKSESORIS</a></li>
+              <li><a href="kabel.html">KABEL</a></li>
+              <li class="more">
+                <span><a href="#">LAINNYA</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Jasa instalasi Cctv Wirelless</a></li>
+                  <li><a href="#">Jasa Instalasi Cctv Kabel</a></li>
+                  <li><a href="#">Jasa Instalasi LED</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">MERK</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">HIKVISION</a></li>
+              <li><a href="#">HILOOK</a></li>
+              <li><a href="#">DAHUA</a></li>
+              <li><a href="#">IMOU</a></li>
+              <li><a href="#">RUIJIE</a></li>
+            </ul>
+          </li>
+          <li><a href="#tentang">TENTANG</a></li>
+          <li><a href="#product">FAVORIT</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input class="form-control mr-sm-2" type="search" placeholder="Cari product..." id="search-bar" aria-label="Search" oninput="debouncedSearch()">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<br>
+
+
+                 
+<!-- Keranjang Floating -->
+<div id="cart-icon">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cart-count">0</span>
+</div>
+
+<!-- Modal Daftar Belanja -->
+<div id="cart-modal">
+  <div class="modal-content">
+    <h3>List Pesanan </h3>
+    <ul id="cart-list"></ul>
+    <br>
+    <p id="total-price">Total: Rp 0</p>
+    <div class="modal-buttons">
+      <button id="send-whatsapp" class="btn btn-success">Kirim ke WhatsApp</button>
+      <button id="close-modal" class="btn btn-danger">Tutup</button>
+    </div>
+  </div>
+</div>
+
+
+      
+  
+      
+      <!-- Additional Products (sequentially added) -->
+ 
+  
+    <!-- Message when no products match the search -->
+    <div id="no-results-message" class="alert alert-warning" style="display: none;  padding: 10px 20px; margin-top: 40px; ;">
+      maaf barang yang di cari belum tersedia.
+  </div>
+  
+  </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
